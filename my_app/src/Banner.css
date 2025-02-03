@@ -1,0 +1,15 @@
+.banner{
+    padding: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.banner > button{
+    height: 50px;
+}
+.banner > img{
+    width: 60%;
+    height: 100% !important;
+}

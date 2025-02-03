@@ -1,0 +1,32 @@
+#navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 63, 229);
+}
+#navbar > img {
+  border-radius: 20px;
+}
+.navBarCenter{
+  display: flex;
+  gap: 20px;
+}
+
+.navBarCenter span{
+  font-size: 16px;
+  color: white;
+}
+
+#navBarRight{
+  display: flex;
+  gap: 20px;
+}
+
+#navBarRight button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  /* background-color: ; */
+}
