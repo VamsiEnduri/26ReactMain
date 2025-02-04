@@ -342,8 +342,6 @@ export default function ListRendering(){
         }
     </tbody>
 </table>
-
-
  
 </div>
     )
