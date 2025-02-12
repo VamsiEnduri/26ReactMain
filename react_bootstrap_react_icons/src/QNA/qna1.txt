@@ -1,0 +1,152 @@
+what is react?
+ -- react is js library which is used to create the rich ui based on components?
+
+why react?
+cuase it is having resuable compo,very fast compared to js, automatically ui updates, single html page,huge ecosystem
+
+when react?
+when you need to build large scale applications which are very complex in data managament (state mange system), rich ui, fast dev
+
+how can you install react app?
+npm   --> create-react-app
+npx
+
+what is d/f b/w GUI vs CLI?
+
+
+what is componnet in react?
+-- comp is js function which returns jsx which is reuasble
+  or comp is bulding blocks of ui 
+  
+what is jsx?
+-- js xml extemsion which is like nrml html
+  or html like syntax is ntng but jsx
+
+what is babel?
+ -- babel is transpiler which converts yr react comp to js objects
+
+ what are props in react?
+ data carrioers which carries data from parent comp to child comp
+
+ how many props are there in react?
+
+ -- general props
+ -- child props
+
+
+ what is list rendering in react? and what is the use of it?
+
+ -- list rendering is used to render the list of elments (map) and by this we can use a sibgle comp and we can pass the props and by that we can use that comp length of array -- times
+
+
+ what is conditional rendering ? why we need it?
+ in react, there are spome casese wjere we need to render the ui baseed on some conitions, at thtat time we use conditional rendering ex:-- data>0 ? data.map or user loggedin true --> dashbaord enter 
+
+
+what is react-bbotstrap?
+react bootstrap is a js library whic is usedwith react for componenet creation
+
+what are react-icons?
+react iccons isa librray that provides icon to react
+
+what is d/f b/ the library vs framework?  ****
+
+
+what are the features of react?
+  -- compoenent based architecture
+  -- jsx
+  -- virtual DOM
+  -- resuable components
+  -- rich ecosystem
+  -- one way data flow
+  -- server side rendering
+  -- mobile applications
+  -- SEO
+  -- cross browser compatible
+
+
+what are jsx rules?
+-- jsx syntax should have single parent
+-- cameCase attributes
+-- js expression should be use in {}
+-- all tags should be closed
+-- class --> className
+
+
+
+
+
+
+
+const person = {
+  name: "Vamsi",
+  age: 26,
+  print(){
+     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`); 
+  },
+   hello: {
+   name: "ravi",
+   age:27,
+    greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+   }
+};
+person.print()
+person.hello.greet()
+
+
+
+
+
+
+class App{
+    constructor(name,age){
+    this.zxcv=  name;
+     this.asdfghjkl= age;
+    }
+    
+    info(){
+         console.log(`hello ${this.zxcv} and im ${this.asdfghjkl} old`)
+   }
+}
+const obj1=new App("vamsi",26)
+const obj2=new App("ravi",27)
+const obj3=new App("srilekha",29)
+obj1.info()
+console.log(obj2.info())
+console.log(obj3.info())
+
+
+
+
+
+
+
+class App{
+    constructor(name,age){
+    this.zxcv=  name;
+     this.asdfghjkl= age;
+    }
+    
+    info(){
+         console.log(`hello ${this.zxcv} and im ${this.asdfghjkl} old`)
+   }
+}
+const obj1=new App("vamsi",26)
+// console.log(obj1.info(),"app output")
+
+
+class App2 extends App{
+    constructor(name,age){
+        super(name,age)
+        this.name=name;
+        this.age=age
+    }
+    info2(){
+        console.log(`hello my name is ${this.name} and im ${this.age} old`)
+    }
+}
+const vamsi1=new App2("ntr",42)
+obj1.info()
+vamsi1.info2()
