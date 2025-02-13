@@ -1,0 +1,5 @@
+state:--
+it is a object which stores the data of component
+
+why state?
+with the help of state, we can build dyna,icn behaviour in react component
