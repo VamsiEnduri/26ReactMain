@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+  align-items: center;
+}
+
+#nav-right{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
