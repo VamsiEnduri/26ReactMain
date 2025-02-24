@@ -1,0 +1,15 @@
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    padding: 0px 20px;
+    gap: 20px;
+}
+.cardContainer > .card{
+    background:linear-gradient(to right,orange,white, green);
+width: 100%;
+padding: 10px;
+}
+
+.cardContainer > .card > img{
+    width: 100%;
+    }
