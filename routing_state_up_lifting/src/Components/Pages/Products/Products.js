@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Products = ({data}) => {
     const navigate=useNavigate()
-    // console.log(useNavigate(),"usenavifate")
+    // console.log(navigate())
 
   return (
     <div className='cardContainer'>
@@ -17,10 +17,7 @@ const Products = ({data}) => {
                     <img src={x.image}/>
                     <p>{x.name}</p>
                     <span>{x.rating}</span>
-                    <div>
-                        <button>ingredients</button>
-                        <button>instrcutions</button>
-                    </div>
+                    
                 </div>
             )
         })}
