@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 
 const SignUp = () => {
   const [signupDetails, setDSignupDetails] = useState({
@@ -26,8 +26,10 @@ const SignUp = () => {
   // password:vamsi@123
 
 
-
-
+  useEffect (()=>{
+    const storedUsers = JSON.parse(localStorage.getItem("allUsers")) || [];
+    setAllUsers (storedUsers);
+  },[])
   const handleSubmit = (e) => {
     e.preventDefault();
    const allSignUpusersData=[...allUsers,signupDetails]
