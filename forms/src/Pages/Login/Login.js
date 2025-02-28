@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+  const nav=useNavigate()
     const [loginDetails,setLoginDetails]=useState({email:"",password:""})
 
     const handleDetailsLogin=(e)=>{
@@ -17,6 +18,8 @@ const Login = () => {
 
     if(userFound){
         alert("login successfully done!!!")
+        localStorage.setItem("loggedInUser",JSON.stringify(userFound))
+        nav("/dashboard")
     }else{
         alert("invalid credentials")
     }
